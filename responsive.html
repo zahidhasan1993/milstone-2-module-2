@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .item{
+            border: 2px solid fuchsia;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .item img{
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        
+        @media screen and (max-width : 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width : 577px) and (max-width : 768px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=100</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=200</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=300</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=400</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=500</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=600</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=700</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=800</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=900</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=1000</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=1100</h3>
+        </div>
+        <div class="item">
+            <img src="./images/18814662_1576482129084368_8999877313875746551_o.jpg" alt="">
+            <h3>price=1200</h3>
+        </div>
+    </div>
+</body>
+</html>
